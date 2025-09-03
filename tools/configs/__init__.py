@@ -176,6 +176,6 @@ font_configs = [
         descent=-48 // 4,
         x_height=math.floor(48 / 4 + 3),
         cap_height=math.floor(48 * 2 / 3),
-        source_names=['HZK48'],
+        source_names=['ASC48', 'HZK48'],
     ),
 ]

@@ -19,6 +19,6 @@ def make_preview_image(font_config: FontConfig):
     image = image.resize((image.width * 2, image.height * 2), Image.Resampling.NEAREST)
 
     path_define.outputs_dir.mkdir(parents=True, exist_ok=True)
-    file_path = path_define.outputs_dir.joinpath(f'preview-{font_config.font_size}px.png')
+    file_path = path_define.outputs_dir.joinpath(f'preview-{font_config.family}{font_config.font_size}px.png')
     image.save(file_path)
     logger.info("Make preview image: '{}'", file_path)
