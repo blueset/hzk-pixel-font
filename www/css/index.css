@@ -13,6 +13,46 @@
     font-family: HZK-16px;
     src: url("../fonts/hzk-pixel-16px.otf.woff2");
 }
+@font-face {
+    font-family: HZKF-16px;
+    src: url("../fonts/hzk-pixelF-16px.otf.woff2");
+}
+@font-face {
+    font-family: HZKS-16px;
+    src: url("../fonts/hzk-pixelS-16px.otf.woff2");
+}
+
+@font-face {
+    font-family: HZKF-24px;
+    src: url("../fonts/hzk-pixelF-24px.otf.woff2");
+}
+@font-face {
+    font-family: HZKH-24px;
+    src: url("../fonts/hzk-pixelH-24px.otf.woff2");
+}
+@font-face {
+    font-family: HZKK-24px;
+    src: url("../fonts/hzk-pixelK-24px.otf.woff2");
+}
+@font-face {
+    font-family: HZKS-24px;
+    src: url("../fonts/hzk-pixelS-24px.otf.woff2");
+}
+
+@font-face {
+    font-family: HZK-32px;
+    src: url("../fonts/hzk-pixel-32px.otf.woff2");
+}
+
+@font-face {
+    font-family: HZK-40px;
+    src: url("../fonts/hzk-pixel-40px.otf.woff2");
+}
+
+@font-face {
+    font-family: HZK-48px;
+    src: url("../fonts/hzk-pixel-48px.otf.woff2");
+}
 
 body {
     width: 100%;
@@ -37,42 +77,73 @@ body {
     }
 }
 
+.title {
+    margin-top: calc(var(--size) * 2);
+    margin-bottom: var(--size);
+    font-size: calc(var(--size) * 3);
+    font-weight: normal;
+    line-height: calc(var(--size) * 4);
+}
+
+.content {
+    margin-top: var(--size);
+    margin-bottom: var(--size);
+    font-size: calc(var(--size) * 2);
+    line-height: calc(var(--size) * 3);
+}
+
 .font-12px {
     font-family: HZK-12px, serif;
     letter-spacing: 1px;
-
-    .title {
-        margin-top: 24px;
-        margin-bottom: 12px;
-        font-size: 36px;
-        font-weight: normal;
-        line-height: 48px;
-    }
-
-    .content {
-        margin-top: 12px;
-        margin-bottom: 12px;
-        font-size: 24px;
-        line-height: 36px;
-    }
+    --size: 12px;
 }
 
 .font-16px {
     font-family: HZK-16px, serif;
     letter-spacing: 1px;
+    --size: 16px;
+}
 
-    .title {
-        margin-top: 32px;
-        margin-bottom: 16px;
-        font-size: 48px;
-        font-weight: normal;
-        line-height: 64px;
-    }
+.font-16px.hzks {
+    font-family: HZKS-16px, serif;
+}
+.font-16px.hzkf {
+    font-family: HZKF-16px, serif;
+}
 
-    .content {
-        margin-top: 16px;
-        margin-bottom: 16px;
-        font-size: 32px;
-        line-height: 48px;
-    }
+.font-24px {
+    font-family: HZK-24px, serif;
+    letter-spacing: 1px;
+    --size: 24px;
+}
+
+.font-24px.hzkf {
+    font-family: HZKF-24px, serif;
+}
+.font-24px.hzkh {
+    font-family: HZKH-24px, serif;
+}
+.font-24px.hzkk {
+    font-family: HZKK-24px, serif;
+}
+.font-24px.hzks {
+    font-family: HZKS-24px, serif;
+}
+
+.font-32px {
+    font-family: HZK-32px, serif;
+    letter-spacing: 1px;
+    --size: 32px;
+}
+
+.font-40px {
+    font-family: HZK-40px, serif;
+    letter-spacing: 1px;
+    --size: 40px;
+}
+
+.font-48px {
+    font-family: HZK-48px, serif;
+    letter-spacing: 1px;
+    --size: 48px;
 }
