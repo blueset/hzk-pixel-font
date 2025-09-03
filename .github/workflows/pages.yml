@@ -2,7 +2,9 @@ name: Pages
 
 on:
   push:
-    branches: [master]
+    branches: 
+    - master
+    - fork
 
 concurrency:
   group: pages

@@ -1,5 +1,6 @@
 from tools.configs.dump import DumpConfig
 from tools.configs.font import FontConfig
+import math
 
 version = '1.10.0'
 version_time = '2025-08-24'
@@ -98,5 +99,83 @@ font_configs = [
         x_height=7,
         cap_height=10,
         source_names=['ASC16', 'HZK16'],
+    ),
+    FontConfig(
+        font_size=16,
+        ascent=16 * 3 // 4,
+        descent=-16 // 4,
+        x_height=math.floor(16 / 4 + 3),
+        cap_height=math.floor(16 * 2 / 3),
+        source_names=['HZK16F'],
+        family='F',
+    ),
+    FontConfig(
+        font_size=16,
+        ascent=16 * 3 // 4,
+        descent=-16 // 4,
+        x_height=math.floor(16 / 4 + 3),
+        cap_height=math.floor(16 * 2 / 3),
+        source_names=['HZK16S'],
+        family='S',
+    ),
+    FontConfig(
+        font_size=24,
+        ascent=24 * 3 // 4,
+        descent=-24 // 4,
+        x_height=math.floor(24 / 4 + 3),
+        cap_height=math.floor(24 * 2 / 3),
+        source_names=['HZK24F'],
+        family='F',
+    ),
+    FontConfig(
+        font_size=24,
+        ascent=24 * 3 // 4,
+        descent=-24 // 4,
+        x_height=math.floor(24 / 4 + 3),
+        cap_height=math.floor(24 * 2 / 3),
+        source_names=['HZK24H'],
+        family='H',
+    ),
+    FontConfig(
+        font_size=24,
+        ascent=24 * 3 // 4,
+        descent=-24 // 4,
+        x_height=math.floor(24 / 4 + 3),
+        cap_height=math.floor(24 * 2 / 3),
+        source_names=['HZK24K'],
+        family='K',
+    ),
+    FontConfig(
+        font_size=24,
+        ascent=24 * 3 // 4,
+        descent=-24 // 4,
+        x_height=math.floor(24 / 4 + 3),
+        cap_height=math.floor(24 * 2 / 3),
+        source_names=['HZK24S'],
+        family='S',
+    ),
+    FontConfig(
+        font_size=32,
+        ascent=32 * 3 // 4,
+        descent=-32 // 4,
+        x_height=math.floor(32 / 4 + 3),
+        cap_height=math.floor(32 * 2 / 3),
+        source_names=['HZK32'],
+    ),
+    FontConfig(
+        font_size=40,
+        ascent=40 * 3 // 4,
+        descent=-40 // 4,
+        x_height=math.floor(40 / 4 + 3),
+        cap_height=math.floor(40 * 2 / 3),
+        source_names=['HZK40'],
+    ),
+    FontConfig(
+        font_size=48,
+        ascent=48 * 3 // 4,
+        descent=-48 // 4,
+        x_height=math.floor(48 / 4 + 3),
+        cap_height=math.floor(48 * 2 / 3),
+        source_names=['HZK48'],
     ),
 ]

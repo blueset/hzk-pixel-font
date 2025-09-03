@@ -6,6 +6,7 @@ class FontConfig:
     x_height: int
     cap_height: int
     source_names: list[str]
+    family: str = ""
 
     def __init__(
             self,
@@ -15,6 +16,7 @@ class FontConfig:
             x_height: int,
             cap_height: int,
             source_names: list[str],
+            family: str = "",
     ):
         self.font_size = font_size
         self.ascent = ascent
@@ -22,3 +24,4 @@ class FontConfig:
         self.x_height = x_height
         self.cap_height = cap_height
         self.source_names = source_names
+        self.family = family

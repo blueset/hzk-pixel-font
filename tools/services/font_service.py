@@ -35,7 +35,7 @@ def _create_builder(font_config: FontConfig, character_mapping: dict[int, str], 
     builder.meta_info.version = configs.version
     builder.meta_info.created_time = datetime.fromisoformat(f'{configs.version_time}T00:00:00Z')
     builder.meta_info.modified_time = builder.meta_info.created_time
-    builder.meta_info.family_name = f'HZK Pixel {font_config.font_size}px'
+    builder.meta_info.family_name = f'HZK Pixel{font_config.family} {font_config.font_size}px'
     builder.meta_info.weight_name = WeightName.REGULAR
     builder.meta_info.serif_style = SerifStyle.SERIF
     builder.meta_info.slant_style = SlantStyle.NORMAL
@@ -64,7 +64,7 @@ def make_fonts(font_config: FontConfig, character_mapping: dict[int, str], glyph
 
     builder = _create_builder(font_config, character_mapping, glyph_sequence)
     for font_format in options.font_formats:
-        file_path = path_define.outputs_dir.joinpath(f'hzk-pixel-{font_config.font_size}px.{font_format}')
+        file_path = path_define.outputs_dir.joinpath(f'hzk-pixel{font_config.family}-{font_config.font_size}px.{font_format}')
         if font_format == 'otf.woff':
             builder.save_otf(file_path, flavor=Flavor.WOFF)
         elif font_format == 'otf.woff2':
