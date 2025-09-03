@@ -106,7 +106,7 @@ font_configs = [
         descent=-16 // 4,
         x_height=math.floor(16 / 4 + 3),
         cap_height=math.floor(16 * 2 / 3),
-        source_names=['HZK16F'],
+        source_names=['ASC16', 'HZK16F'],
         family='F',
     ),
     FontConfig(
@@ -115,7 +115,7 @@ font_configs = [
         descent=-16 // 4,
         x_height=math.floor(16 / 4 + 3),
         cap_height=math.floor(16 * 2 / 3),
-        source_names=['HZK16S'],
+        source_names=['ASC16', 'HZK16S'],
         family='S',
     ),
     FontConfig(
